@@ -448,6 +448,24 @@ func (c *Client) Create(ctx context.Context, dbID thread.ID, collectionName stri
 	return resp.GetInstanceIDs(), nil
 }
 
+// CreateInstanceWithPayload creates new instances of objects.
+func (c *Client) CreateInstanceWithPayload(ctx context.Context, dbID thread.ID, collectionName string, payloads [][]byte, opts ...db.TxnOption) ([]string, error) {
+	args := &db.TxnOptions{}
+	for _, opt := range opts {
+		opt(args)
+	}
+	ctx = thread.NewTokenContext(ctx, args.Token)
+	resp, err := c.c.Create(ctx, &pb.CreateRequest{
+		DbID:           dbID.Bytes(),
+		CollectionName: collectionName,
+		Instances:      payloads,
+	})
+	if err != nil {
+		return nil, err
+	}
+	return resp.GetInstanceIDs(), nil
+}
+
 // Verify verifies existing instance changes.
 func (c *Client) Verify(ctx context.Context, dbID thread.ID, collectionName string, instances Instances, opts ...db.TxnOption) error {
 	args := &db.TxnOptions{}
