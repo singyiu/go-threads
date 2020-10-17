@@ -2,7 +2,7 @@
 
 > Work pretty much inspired by `go-libp2p-peerstore` great implementation.
 
-This is a `go-datastore` backed implementation of [`go-threads/core/logstore`](https://github.com/textileio/go-threads/blob/master/core/logstore/logstore.go):
+This is a `go-datastore` backed implementation of [`go-threads/core/logstore`](https://github.com/singyiu/go-threads/blob/master/core/logstore/logstore.go):
 * AddrBook
 * HeadBook
 * KeyBook

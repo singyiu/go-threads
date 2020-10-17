@@ -7,8 +7,8 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 	pstore "github.com/libp2p/go-libp2p-core/peerstore"
 	ma "github.com/multiformats/go-multiaddr"
-	core "github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/thread"
+	core "github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 var addressBookSuite = map[string]func(book core.AddrBook) func(*testing.T){

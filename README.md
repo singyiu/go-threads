@@ -4,7 +4,7 @@
 [![Chat on Slack](https://img.shields.io/badge/slack-slack.textile.io-informational.svg?style=popout-square)](https://slack.textile.io)
 [![GitHub license](https://img.shields.io/github/license/textileio/go-threads.svg?style=popout-square)](./LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/textileio/go-threads?style=flat-square)](https://goreportcard.com/report/github.com/textileio/go-threads?style=flat-square)
-[![GitHub action](https://github.com/textileio/go-threads/workflows/Tests/badge.svg?style=popout-square)](https://github.com/textileio/go-threads/actions)
+[![GitHub action](https://github.com/singyiu/go-threads/workflows/Tests/badge.svg?style=popout-square)](https://github.com/singyiu/go-threads/actions)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=popout-square)](https://github.com/RichardLitt/standard-readme)
 
 > Server-less p2p database built on libp2p
@@ -76,7 +76,7 @@ This repo contains a daemon and client for interacting with these layers as a _r
 
 ### Daemon
 
--   **Prebuilt package**: See [release assets](https://github.com/textileio/go-threads/releases/latest)
+-   **Prebuilt package**: See [release assets](https://github.com/singyiu/go-threads/releases/latest)
 -   **Docker image**: See the `latest` tag on [Docker Hub](https://hub.docker.com/r/textile/go-threads/tags)
 -   **Build from the source**:
 
@@ -89,12 +89,12 @@ go get ./threadsd
 #### Client
 
 ```
-import "github.com/textileio/go-threads/api/client"
+import "github.com/singyiu/go-threads/api/client"
 ```
 
 ## Getting Started
 
-You can think of the [DB client](github.com/textileio/go-threads/api/client) as a gRPC client wrapper around the internal `db` package API, and the [Network client](github.com/textileio/go-threads/net/api/client) as a gRPC client wrapper around the internal `net` package API. This section will only focus on getting started with the gRPC clients, but Golang apps may choose to interact directly with `db` and/or `net`.
+You can think of the [DB client](github.com/singyiu/go-threads/api/client) as a gRPC client wrapper around the internal `db` package API, and the [Network client](github.com/singyiu/go-threads/net/api/client) as a gRPC client wrapper around the internal `net` package API. This section will only focus on getting started with the gRPC clients, but Golang apps may choose to interact directly with `db` and/or `net`.
 
 ### Running ThreadDB
 
@@ -107,7 +107,7 @@ REPO_PATH=~/myrepo
 THRDS_DEBUG=true
 ```
 
-Copy [this compose file](https://github.com/textileio/go-threads/blob/master/docker-compose.yml) and run it with the following command.
+Copy [this compose file](https://github.com/singyiu/go-threads/blob/master/docker-compose.yml) and run it with the following command.
 
 ```
 docker-compose -f docker-compose.yml up 
@@ -151,14 +151,14 @@ Note the various configuration values shown in the output above. These can be mo
 
 The database layer is a document store, which internally leverages the `net` API. Most applications will only interface with this layer.
 
-The full API spec is available [here](https://pkg.go.dev/github.com/textileio/go-threads/api/client).
+The full API spec is available [here](https://pkg.go.dev/github.com/singyiu/go-threads/api/client).
 
 As described in the [paper](https://docsend.com/view/gu3ywqi), ThreadDB's network layer orchestrates groups of event logs, or _threads_. In the current implementation, a single database leverages a single network-layer thread for state orchestration.
 
 #### Starting the client
 
 ```
-import "github.com/textileio/go-threads/api/client"
+import "github.com/singyiu/go-threads/api/client"
 ...
 
 db, err := client.NewClient("/ip4/127.0.0.1/tcp/6006", grpc.WithInsecure())
@@ -211,7 +211,7 @@ Collections are groups of documents or _instances_ and are analogous to tables i
 The `WriteValidator` function receives three arguments:
 
 -   `writer`: The multibase-encoded public key identity of the writer.
--   `event`: An object describing the update event (see [`core.Event`](https://pkg.go.dev/github.com/textileio/go-threads/core/db#Event)).
+-   `event`: An object describing the update event (see [`core.Event`](https://pkg.go.dev/github.com/singyiu/go-threads/core/db#Event)).
 -   `instance`: The current instance as a JavaScript object before the update event is applied.
 
 A [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) return value indicates a failed validation.
@@ -349,7 +349,7 @@ err = db.Save(context.Background(), threadID, "Persons", Instances{alice})
 
 There are three methods to query for collection instances: ***`Find`***, ***`FindByID`***, and ***`Has`***. As usual, queries are enhanced by indexes.
 
-Check out [`db.Query`](https://pkg.go.dev/github.com/textileio/go-threads/db#Query) and [`db.Criterion`](https://pkg.go.dev/github.com/textileio/go-threads/db#Criterion) for more about constructing queries and ordering results.
+Check out [`db.Query`](https://pkg.go.dev/github.com/singyiu/go-threads/db#Query) and [`db.Criterion`](https://pkg.go.dev/github.com/singyiu/go-threads/db#Criterion) for more about constructing queries and ordering results.
 
 ```
 ...
@@ -418,7 +418,7 @@ end() // Done reading
 
 We can listen for DB changes on three levels: DB, collection, or instance.
 
-Check out [ListenOption](https://pkg.go.dev/github.com/textileio/go-threads/api/client#ListenOption) for more.
+Check out [ListenOption](https://pkg.go.dev/github.com/singyiu/go-threads/api/client#ListenOption) for more.
 
 ```
 ...
@@ -440,12 +440,12 @@ for event := range events {
 
 The network layer maintains and orchestrates append-only event logs between network participants and is used internally by the database layer. Some applications, like event logging, may choose to rely on this layer directly.
 
-The full API spec is available [here](https://pkg.go.dev/github.com/textileio/go-threads/net/api/client).
+The full API spec is available [here](https://pkg.go.dev/github.com/singyiu/go-threads/net/api/client).
 
 #### Starting the client
 
 ```
-import "github.com/textileio/go-threads/net/api/client"
+import "github.com/singyiu/go-threads/net/api/client"
 ...
 
 net, err := client.NewClient("/ip4/127.0.0.1/tcp/6006", grpc.WithInsecure())
@@ -588,13 +588,13 @@ Pull requests and bug reports are very welcome ❤️
 This repository falls under the Textile [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 Feel free to get in touch by:
--   [Opening an issue](https://github.com/textileio/go-threads/issues/new)
+-   [Opening an issue](https://github.com/singyiu/go-threads/issues/new)
 -   Joining the [public Slack channel](https://slack.textile.io/)
 -   Sending an email to contact@textile.io
 
 ## Changelog
 
-A changelog is published along with each [release](https://github.com/textileio/go-threads/releases).
+A changelog is published along with each [release](https://github.com/singyiu/go-threads/releases).
 
 ## License
 

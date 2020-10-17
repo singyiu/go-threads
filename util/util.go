@@ -17,7 +17,7 @@ import (
 	swarm "github.com/libp2p/go-libp2p-swarm"
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/phayes/freeport"
-	core "github.com/textileio/go-threads/core/db"
+	core "github.com/singyiu/go-threads/core/db"
 	"github.com/tidwall/sjson"
 	"go.uber.org/zap/zapcore"
 )

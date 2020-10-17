@@ -14,10 +14,10 @@ import (
 
 	logging "github.com/ipfs/go-log"
 	ma "github.com/multiformats/go-multiaddr"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/db"
-	"github.com/textileio/go-threads/util"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/db"
+	"github.com/singyiu/go-threads/util"
 )
 
 func TestMain(m *testing.M) {

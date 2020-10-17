@@ -8,9 +8,9 @@ import (
 	"github.com/libp2p/go-libp2p-core/crypto"
 	ds "github.com/textileio/go-datastore"
 	badger "github.com/textileio/go-ds-badger"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/jsonpatcher"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/jsonpatcher"
 )
 
 const (

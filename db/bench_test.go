@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/textileio/go-threads/common"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/common"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/util"
 	"github.com/tidwall/sjson"
 )
 

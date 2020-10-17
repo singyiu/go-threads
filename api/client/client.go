@@ -10,9 +10,9 @@ import (
 
 	"github.com/alecthomas/jsonschema"
 	ma "github.com/multiformats/go-multiaddr"
-	pb "github.com/textileio/go-threads/api/pb"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/db"
+	pb "github.com/singyiu/go-threads/api/pb"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/db"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	ic "github.com/libp2p/go-libp2p-core/crypto"
-	"github.com/textileio/go-threads/crypto/asymmetric"
-	"github.com/textileio/go-threads/crypto/symmetric"
+	"github.com/singyiu/go-threads/crypto/asymmetric"
+	"github.com/singyiu/go-threads/crypto/symmetric"
 )
 
 // EncryptionKey represents a key that can be used for encryption.

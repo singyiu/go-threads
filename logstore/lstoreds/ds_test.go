@@ -9,8 +9,8 @@ import (
 
 	ds "github.com/ipfs/go-datastore"
 	badger "github.com/ipfs/go-ds-badger"
-	core "github.com/textileio/go-threads/core/logstore"
-	pt "github.com/textileio/go-threads/test"
+	core "github.com/singyiu/go-threads/core/logstore"
+	pt "github.com/singyiu/go-threads/test"
 )
 
 type datastoreFactory func(tb testing.TB) (ds.Datastore, func())

@@ -16,7 +16,7 @@ COPY . $SRC_DIR
 
 # Install the daemon
 RUN cd $SRC_DIR \
-  && go install github.com/textileio/go-threads/threadsd
+  && go install github.com/singyiu/go-threads/threadsd
 
 # Get su-exec, a very minimal tool for dropping privileges,
 # and tini, a very minimal init daemon for containers

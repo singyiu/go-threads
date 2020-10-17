@@ -1,4 +1,4 @@
-module github.com/textileio/go-threads
+module github.com/singyiu/go-threads
 
 go 1.14
 

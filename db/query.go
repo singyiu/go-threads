@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	core "github.com/textileio/go-threads/core/db"
+	core "github.com/singyiu/go-threads/core/db"
 )
 
 // Query is a json-seriable query representation.

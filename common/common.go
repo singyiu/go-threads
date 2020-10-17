@@ -17,10 +17,10 @@ import (
 	"github.com/libp2p/go-libp2p-kad-dht/dual"
 	"github.com/libp2p/go-libp2p-peerstore/pstoreds"
 	ma "github.com/multiformats/go-multiaddr"
-	"github.com/textileio/go-threads/core/app"
-	"github.com/textileio/go-threads/logstore/lstoreds"
-	"github.com/textileio/go-threads/net"
-	util "github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/core/app"
+	"github.com/singyiu/go-threads/logstore/lstoreds"
+	"github.com/singyiu/go-threads/net"
+	util "github.com/singyiu/go-threads/util"
 	"google.golang.org/grpc"
 )
 

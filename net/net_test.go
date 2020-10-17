@@ -18,12 +18,12 @@ import (
 	"github.com/libp2p/go-libp2p-core/peerstore"
 	ma "github.com/multiformats/go-multiaddr"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-threads/cbor"
-	"github.com/textileio/go-threads/core/logstore"
-	core "github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/core/thread"
-	tstore "github.com/textileio/go-threads/logstore/lstoremem"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/cbor"
+	"github.com/singyiu/go-threads/core/logstore"
+	core "github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/core/thread"
+	tstore "github.com/singyiu/go-threads/logstore/lstoremem"
+	"github.com/singyiu/go-threads/util"
 )
 
 func TestNet_GetToken(t *testing.T) {

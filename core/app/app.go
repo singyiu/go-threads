@@ -7,10 +7,10 @@ import (
 
 	"github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
-	"github.com/textileio/go-threads/broadcast"
-	"github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/broadcast"
+	"github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/util"
 )
 
 var (

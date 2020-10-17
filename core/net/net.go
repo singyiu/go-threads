@@ -10,7 +10,7 @@ import (
 	"github.com/libp2p/go-libp2p-core/host"
 	"github.com/libp2p/go-libp2p-core/peer"
 	ma "github.com/multiformats/go-multiaddr"
-	"github.com/textileio/go-threads/core/thread"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 // Net wraps API with a DAGService and libp2p host.

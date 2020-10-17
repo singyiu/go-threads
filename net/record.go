@@ -6,7 +6,7 @@ import (
 
 	"github.com/ipfs/go-cid"
 	"github.com/libp2p/go-libp2p-core/peer"
-	core "github.com/textileio/go-threads/core/net"
+	core "github.com/singyiu/go-threads/core/net"
 )
 
 type linkedRecord interface {

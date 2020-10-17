@@ -7,9 +7,9 @@ import (
 	"github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
 	"github.com/libp2p/go-libp2p-core/peer"
-	core "github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/thread"
-	pb "github.com/textileio/go-threads/net/pb"
+	core "github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/thread"
+	pb "github.com/singyiu/go-threads/net/pb"
 )
 
 type dsHeadBook struct {

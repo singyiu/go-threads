@@ -14,9 +14,9 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/libp2p/go-libp2p-peerstore/pstoremem"
 	ma "github.com/multiformats/go-multiaddr"
-	"github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/thread"
-	pb "github.com/textileio/go-threads/net/pb"
+	"github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/thread"
+	pb "github.com/singyiu/go-threads/net/pb"
 	"github.com/whyrusleeping/base32"
 )
 

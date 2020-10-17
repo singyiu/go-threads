@@ -3,8 +3,8 @@ package util
 import (
 	"sync"
 
-	apipb "github.com/textileio/go-threads/net/api/pb"
-	netpb "github.com/textileio/go-threads/net/pb"
+	apipb "github.com/singyiu/go-threads/net/api/pb"
+	netpb "github.com/singyiu/go-threads/net/pb"
 )
 
 func RecFromServiceRec(r *netpb.Log_Record) *apipb.Record {

@@ -20,13 +20,13 @@ import (
 	ds "github.com/textileio/go-datastore"
 	kt "github.com/textileio/go-datastore/keytransform"
 	"github.com/textileio/go-datastore/query"
-	threadcbor "github.com/textileio/go-threads/cbor"
-	"github.com/textileio/go-threads/core/app"
-	core "github.com/textileio/go-threads/core/db"
-	lstore "github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/util"
+	threadcbor "github.com/singyiu/go-threads/cbor"
+	"github.com/singyiu/go-threads/core/app"
+	core "github.com/singyiu/go-threads/core/db"
+	lstore "github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/util"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/libp2p/go-libp2p-core/crypto"
-	. "github.com/textileio/go-threads/jwt"
+	. "github.com/singyiu/go-threads/jwt"
 )
 
 var publicKey = "CAESIP1G8uGFpX+iduqgJfKLt0nw870MI9ydHcKg9gDIr5Tb"

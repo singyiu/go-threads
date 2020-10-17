@@ -8,7 +8,7 @@ import (
 
 	cbornode "github.com/ipfs/go-ipld-cbor"
 	mh "github.com/multiformats/go-multihash"
-	core "github.com/textileio/go-threads/core/db"
+	core "github.com/singyiu/go-threads/core/db"
 )
 
 type patchEventOld struct {

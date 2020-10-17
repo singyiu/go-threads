@@ -3,8 +3,8 @@ package lstoremem
 import (
 	"sync"
 
-	core "github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/thread"
+	core "github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 var internKeys = map[string]bool{

@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/textileio/go-threads/common"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/common"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/util"
 )
 
 func checkErr(t *testing.T, err error) {

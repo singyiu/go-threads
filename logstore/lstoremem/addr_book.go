@@ -10,8 +10,8 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/libp2p/go-libp2p-peerstore/addr"
 	ma "github.com/multiformats/go-multiaddr"
-	core "github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/thread"
+	core "github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 var log = logging.Logger("logstore")

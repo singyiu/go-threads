@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	logging "github.com/ipfs/go-log"
-	"github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/util"
 )
 
 type Meta struct {

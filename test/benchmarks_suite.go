@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	pstore "github.com/libp2p/go-libp2p-core/peerstore"
-	core "github.com/textileio/go-threads/core/logstore"
-	"github.com/textileio/go-threads/core/thread"
+	core "github.com/singyiu/go-threads/core/logstore"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 var threadstoreBenchmarks = map[string]func(core.Logstore, chan *logpair) func(*testing.B){

@@ -8,9 +8,9 @@ import (
 	cbornode "github.com/ipfs/go-ipld-cbor"
 	"github.com/ipfs/go-ipld-format"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/crypto"
-	sym "github.com/textileio/go-threads/crypto/symmetric"
+	"github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/crypto"
+	sym "github.com/singyiu/go-threads/crypto/symmetric"
 )
 
 func init() {

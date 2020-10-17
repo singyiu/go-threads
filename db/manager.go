@@ -11,10 +11,10 @@ import (
 	ds "github.com/textileio/go-datastore"
 	kt "github.com/textileio/go-datastore/keytransform"
 	"github.com/textileio/go-datastore/query"
-	"github.com/textileio/go-threads/core/app"
-	"github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/core/app"
+	"github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/util"
 )
 
 var (

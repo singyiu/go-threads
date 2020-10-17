@@ -17,13 +17,13 @@ import (
 	"github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log"
 	ma "github.com/multiformats/go-multiaddr"
-	"github.com/textileio/go-threads/common"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/db"
-	"github.com/textileio/go-threads/integrationtests/foldersync/watcher"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/common"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/db"
+	"github.com/singyiu/go-threads/integrationtests/foldersync/watcher"
+	"github.com/singyiu/go-threads/util"
 )
 
 var (

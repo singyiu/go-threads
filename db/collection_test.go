@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	logging "github.com/ipfs/go-log"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/util"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/util"
 	"github.com/xeipuuv/gojsonschema"
 )
 

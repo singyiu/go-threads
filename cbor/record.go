@@ -4,16 +4,16 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/textileio/go-threads/core/thread"
+	"github.com/singyiu/go-threads/core/thread"
 
 	"github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
 	"github.com/ipfs/go-ipld-format"
 	ic "github.com/libp2p/go-libp2p-core/crypto"
 	mh "github.com/multiformats/go-multihash"
-	"github.com/textileio/go-threads/core/net"
-	"github.com/textileio/go-threads/crypto"
-	pb "github.com/textileio/go-threads/net/pb"
+	"github.com/singyiu/go-threads/core/net"
+	"github.com/singyiu/go-threads/crypto"
+	pb "github.com/singyiu/go-threads/net/pb"
 )
 
 func init() {

@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	extra "github.com/agl/ed25519/extra25519"
-	"github.com/textileio/go-threads/crypto/asymmetric"
+	"github.com/singyiu/go-threads/crypto/asymmetric"
 
 	"github.com/libp2p/go-libp2p-core/crypto"
 	"golang.org/x/crypto/nacl/box"

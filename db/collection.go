@@ -13,9 +13,9 @@ import (
 	jsonpatch "github.com/evanphx/json-patch"
 	"github.com/ipfs/go-ipld-format"
 	ds "github.com/textileio/go-datastore"
-	"github.com/textileio/go-threads/core/app"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/core/thread"
+	"github.com/singyiu/go-threads/core/app"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/core/thread"
 	"github.com/xeipuuv/gojsonschema"
 )
 

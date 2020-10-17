@@ -14,11 +14,11 @@ import (
 	"github.com/ipfs/go-ipld-format"
 	"github.com/multiformats/go-multiaddr"
 	ds "github.com/textileio/go-datastore"
-	"github.com/textileio/go-threads/common"
-	"github.com/textileio/go-threads/core/app"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/common"
+	"github.com/singyiu/go-threads/core/app"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/util"
 )
 
 func TestE2EWithThreads(t *testing.T) {
@@ -120,7 +120,7 @@ func TestMissingCollection(t *testing.T) {
 	})
 	checkErr(t, err)
 	// Delete collection from map to "simulate" not having received it yet...
-	// Motivated by https://github.com/textileio/go-threads/issues/379
+	// Motivated by https://github.com/singyiu/go-threads/issues/379
 	delete(db.collections, "dummy")
 	dummyJSON := util.JSONFromInstance(dummy{Name: "Textile", Counter: 0})
 	_, err = c.Create(dummyJSON)

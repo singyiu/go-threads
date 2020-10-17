@@ -3,9 +3,9 @@ package lstoremem_test
 import (
 	"testing"
 
-	core "github.com/textileio/go-threads/core/logstore"
-	m "github.com/textileio/go-threads/logstore/lstoremem"
-	pt "github.com/textileio/go-threads/test"
+	core "github.com/singyiu/go-threads/core/logstore"
+	m "github.com/singyiu/go-threads/logstore/lstoremem"
+	pt "github.com/singyiu/go-threads/test"
 )
 
 func TestInMemoryLogstore(t *testing.T) {

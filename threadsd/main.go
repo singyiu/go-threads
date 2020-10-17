@@ -14,12 +14,12 @@ import (
 	connmgr "github.com/libp2p/go-libp2p-connmgr"
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/namsral/flag"
-	"github.com/textileio/go-threads/api"
-	pb "github.com/textileio/go-threads/api/pb"
-	"github.com/textileio/go-threads/common"
-	netapi "github.com/textileio/go-threads/net/api"
-	netpb "github.com/textileio/go-threads/net/api/pb"
-	"github.com/textileio/go-threads/util"
+	"github.com/singyiu/go-threads/api"
+	pb "github.com/singyiu/go-threads/api/pb"
+	"github.com/singyiu/go-threads/common"
+	netapi "github.com/singyiu/go-threads/net/api"
+	netpb "github.com/singyiu/go-threads/net/api/pb"
+	"github.com/singyiu/go-threads/util"
 	"google.golang.org/grpc"
 )
 

@@ -2,7 +2,7 @@ package net
 
 import (
 	"github.com/libp2p/go-libp2p-core/crypto"
-	"github.com/textileio/go-threads/core/thread"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 // NewThreadOptions defines options to be used when creating / adding a thread.

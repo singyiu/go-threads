@@ -7,7 +7,7 @@ import (
 	"github.com/ipfs/go-ipld-format"
 	"github.com/libp2p/go-libp2p-core/crypto"
 	"github.com/libp2p/go-libp2p-core/peer"
-	"github.com/textileio/go-threads/core/thread"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 // Record is the most basic component of a log.

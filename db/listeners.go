@@ -5,9 +5,9 @@ import (
 	"sync"
 
 	"github.com/ipfs/go-ipld-format"
-	"github.com/textileio/go-threads/core/app"
-	core "github.com/textileio/go-threads/core/db"
-	"github.com/textileio/go-threads/core/thread"
+	"github.com/singyiu/go-threads/core/app"
+	core "github.com/singyiu/go-threads/core/db"
+	"github.com/singyiu/go-threads/core/thread"
 )
 
 // Listen returns a Listener which notifies about actions applying the

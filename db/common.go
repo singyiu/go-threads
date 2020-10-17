@@ -7,7 +7,7 @@ import (
 
 	datastore "github.com/textileio/go-datastore"
 	"github.com/textileio/go-datastore/query"
-	core "github.com/textileio/go-threads/core/db"
+	core "github.com/singyiu/go-threads/core/db"
 )
 
 type TxMapDatastore struct {

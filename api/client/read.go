@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	pb "github.com/textileio/go-threads/api/pb"
-	"github.com/textileio/go-threads/core/thread"
-	"github.com/textileio/go-threads/db"
+	pb "github.com/singyiu/go-threads/api/pb"
+	"github.com/singyiu/go-threads/core/thread"
+	"github.com/singyiu/go-threads/db"
 )
 
 // ReadTransaction encapsulates a read transaction.

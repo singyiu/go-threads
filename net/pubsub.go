@@ -8,8 +8,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/libp2p/go-libp2p-core/peer"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
-	"github.com/textileio/go-threads/core/thread"
-	pb "github.com/textileio/go-threads/net/pb"
+	"github.com/singyiu/go-threads/core/thread"
+	pb "github.com/singyiu/go-threads/net/pb"
 )
 
 // Handler receives all pushed thread records.
